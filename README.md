@@ -8,6 +8,6 @@ Folosind Arduino IDE se incarca fisierul Master.ino pe Arduino Uno din modulul p
 
 Folosind Arduino IDE se incarca fisierul Slave.ino pe Arduino Nano corespunzator fiecarui modul secundar.
 
-Pentru fiecare modul secundar suplimentar prezent intr-un sistem, se schimba definitia "ADDR" cu o valoare diferita.
+Pentru fiecare modul secundar suplimentar prezent intr-un sistem, se schimba definitia "ADDR" din Slave.ino cu o valoare diferita.
 
 Exemplu: #define ADDR 9 : Arduino Nano din acest modul secundar va avea adresa 9, urmatoarele extensii vor avea oricare adresa cuprinsa intre 0 si 127, dar nu adresa 9.
