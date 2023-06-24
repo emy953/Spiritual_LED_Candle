@@ -1,5 +1,7 @@
 #include <Wire.h> // Libraria pentru I2C
 
+#define ADDR 9
+
 #define HOUR 60000 //numarul de milisecunde intr-un minut - configurabil pentru experimente
 
 #define NR_COL 5 //numarul de coloane din matrice
@@ -22,7 +24,7 @@ uint8_t interval[NR_ROW][NR_COL];
 void setup() {
   
   // Pornire magistrala I2C cu adresa aleasa
-  Wire.begin(9);   
+  Wire.begin(ADDR);   
   // Functia atasata pentru evenimentul de primire de date
   Wire.onReceive(receive);
   //Functia atasata pentru evenimentul de cerere de date
